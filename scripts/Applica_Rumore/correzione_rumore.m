@@ -1,7 +1,8 @@
-im = imread('..\image_sets\val_set_degraded\val_000016.jpg');
+clear all
+
+im = imread('..\..\image_sets\val_set_degraded\val_000016.jpg');
 bri_orig = brisque(im);
-%% correzione automatica
-% mi evito di cercare il sigma corretto per aggiustare le immagini lo faccio fare al brisque con diversi valori di sigma
+
 
 BRI=[];
 for sigma=0.01:0.01:3

@@ -12,7 +12,7 @@ function degradazione_train_set()
     sigma_value = 3;      % per filtro gaussiano
     gauss_var = 0.06;     % per rumore gaussiano
     
-    data = readtable("..\csv\train_set.csv");
+    data = readtable('..\csv\train_small_pulito_espanso.csv');
     
     if iscell(data.Var2)
         data.Var2 = cell2mat(data.Var2);

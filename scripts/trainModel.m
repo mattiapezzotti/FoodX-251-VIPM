@@ -90,7 +90,7 @@ else
         end
     end
 
-    lgraph = createLgraphUsingConnections(layers, connections);
+    lgraph = createGraph(layers, connections);
     
     newLayers = [
         dropoutLayer('Name', 'dropout')
